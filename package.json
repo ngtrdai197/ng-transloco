@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "transloco:optimize": "transloco-optimize dist/ng-transloco/assets/i18n",
+    "build:prod": "ng build --prod && npm run transloco:optimize",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -19,6 +21,8 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@ngneat/transloco": "^2.14.2",
+    "@ngneat/transloco-optimize": "^1.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
